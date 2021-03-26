@@ -9,6 +9,7 @@
     <router-link to="/post">post</router-link>
     <router-view></router-view>
 
+
     <p>현재일 : {{$moment().format('YYYY-MM-DD HH:mm:ss') }}</p>
 
 
