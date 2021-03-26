@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>hello app</h1>
+    <router-link to="/bar">Bar</router-link><br>
+    <router-link to="/foo">Foo</router-link><br>
+    <router-link to="/helloWorld">HELLO</router-link><br>
+    <router-link to="/about">about</router-link><br>
+    <router-link to="/">main</router-link><br>
+    <router-link to="/post">post</router-link>
+    <router-view></router-view>
+
+    <p>현재일 : {{$moment().format('YYYY-MM-DD HH:mm:ss') }}</p>
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
